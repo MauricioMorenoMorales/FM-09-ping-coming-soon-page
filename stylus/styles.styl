@@ -50,6 +50,10 @@ body
 		font-weight fwNormal
 		margin-top 10px
 		cursor pointer
+		&:hover
+			background-color lighten(blue, 20%)
+		&:active
+			background-color darken(blue, 10%)
 
 .image
 	max-width 360px
@@ -62,6 +66,7 @@ body
 		display flex
 		justify-content center
 		&__wrapper
+			cursor pointer
 			display flex
 			align-items center
 			justify-content center
@@ -71,6 +76,8 @@ body
 			border-radius 50%
 			padding 7px
 			margin 20px 10px
+			&:hover
+				transform scale(1.05)
 			& > img
 				width 100%
 				height auto
