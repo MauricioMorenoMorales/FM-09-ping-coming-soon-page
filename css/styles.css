@@ -59,6 +59,20 @@ body {
   border: 1px solid #c2d3ff;
   padding-left: 30px;
   margin-top: 20px;
+  width: 100%;
+}
+.input__text-area.active {
+  border: 1px solid #ff5263;
+}
+.input__text-area__error {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-left: 30px;
+  color: #ff5263;
+  display: none;
+}
+.input__text-area__error.active {
+  display: block;
 }
 .input__button {
   height: 40px;
@@ -67,7 +81,8 @@ body {
   background-color: #4f7df3;
   color: #fff;
   font-weight: 600;
-  margin-top: 20px;
+  margin-top: 10px;
+  cursor: pointer;
 }
 .image {
   max-width: 360px;
@@ -75,7 +90,7 @@ body {
 }
 .footer {
   text-align: center;
-  margin-top: 70px;
+  margin: 70px 0;
 }
 .footer__icons {
   display: flex;
@@ -95,4 +110,34 @@ body {
 .footer__icons__wrapper > img {
   width: 100%;
   height: auto;
+}
+.footer__copyright {
+  color: #969696;
+  font-size: 1.3rem;
+}
+@media screen and (min-width: 990px) {
+  .header__title {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  .input {
+    max-width: 700px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .input__text-area {
+    margin-top: 0;
+  }
+  .input__text-area--wrapper {
+    width: 70%;
+  }
+  .input__button {
+    margin-top: 0;
+    width: 25%;
+    margin-left: 10px;
+  }
+  .image {
+    max-width: 600px;
+  }
 }

@@ -30,6 +30,17 @@ body
 		border 1px solid paleBlue
 		padding-left 30px
 		margin-top 20px
+		width 100%
+		&.active
+			border 1px solid lightRed
+		&__error
+			font-size 1.2rem
+			margin 0
+			margin-left 30px
+			color lightRed
+			display none
+			&.active
+				display block
 	&__button
 		height 40px
 		border-radius 40px
@@ -37,7 +48,8 @@ body
 		background-color blue
 		color white
 		font-weight fwNormal
-		margin-top 20px
+		margin-top 10px
+		cursor pointer
 
 .image
 	max-width 360px
@@ -45,7 +57,7 @@ body
 
 .footer
 	text-align center
-	margin-top 70px
+	margin 70px 0
 	&__icons
 		display flex
 		justify-content center
@@ -62,3 +74,28 @@ body
 			& > img
 				width 100%
 				height auto
+	&__copyright
+		color gray
+		font-size 1.3rem
+
+@media screen and (min-width: 990px)
+	.header
+		&__title
+			font-size 4rem
+			margin-bottom 0
+	.input
+		max-width 700px
+		flex-direction row
+		justify-content center
+		margin-top 20px
+		&__text-area
+			margin-top 0
+			&--wrapper
+				width 70%
+		&__button
+			margin-top 0
+			width 25%
+			margin-left 10px
+
+	.image
+		max-width 600px

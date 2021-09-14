@@ -20,7 +20,10 @@
   </header>
   <main>
     <section class="input">
-      <input class="input__text-area" type="text" name="email" id="id" placeholder="Your email address...">
+      <div class="input__text-area--wrapper">
+        <input class="input__text-area" type="text" name="email" id="id" placeholder="Your email address...">
+        <p class="input__text-area__error">Please provide a valid email address</p>
+      </div>
       <button class="input__button">Notify Me</button>
     </section>
     <figure class="image">
@@ -43,6 +46,7 @@
       &copy; Copyright Ping. All rights reserved.
     </section>
   </footer>
+  <script src="./scripts/script.js"></script>
 
   <!-- <footer>
     <p class="attribution">
