@@ -1,0 +1,98 @@
+html {
+  box-sizing: border-box;
+  font-family: FontFamilyBody;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;
+  font-size: 1.8rem;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+figure {
+  margin: 0;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+html {
+  font-family: 'Libre Franklin', sans-serif;
+}
+body {
+  padding: 0 10px;
+}
+.header {
+  text-align: center;
+  margin-top: 100px;
+}
+.header__title {
+  font-size: 3rem;
+  color: #969696;
+}
+.header__title b {
+  color: #151f29;
+}
+.header__title--thin {
+  font-size: 1.6rem;
+  color: #151f29;
+}
+.input {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.input__text-area {
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid #c2d3ff;
+  padding-left: 30px;
+  margin-top: 20px;
+}
+.input__button {
+  height: 40px;
+  border-radius: 40px;
+  border: none;
+  background-color: #4f7df3;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.image {
+  max-width: 360px;
+  margin: 50px auto;
+}
+.footer {
+  text-align: center;
+  margin-top: 70px;
+}
+.footer__icons {
+  display: flex;
+  justify-content: center;
+}
+.footer__icons__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 20px 10px;
+}
+.footer__icons__wrapper > img {
+  width: 100%;
+  height: auto;
+}

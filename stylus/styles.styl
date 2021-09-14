@@ -1,0 +1,64 @@
+@import './_reset-styles.styl'
+@import './_tokens.styl'
+
+html
+	font-family ffPrimary
+
+body
+	padding 0 10px
+
+.header
+	text-align center
+	margin-top 100px
+	&__title
+		font-size 3rem
+		color gray
+		b
+			color veryGrayBLue
+		&--thin
+			font-size 1.6rem
+			color veryGrayBLue
+
+.input
+	display flex
+	flex-direction column
+	max-width 350px
+	margin 0 auto
+	&__text-area
+		height 40px
+		border-radius 40px
+		border 1px solid paleBlue
+		padding-left 30px
+		margin-top 20px
+	&__button
+		height 40px
+		border-radius 40px
+		border none
+		background-color blue
+		color white
+		font-weight fwNormal
+		margin-top 20px
+
+.image
+	max-width 360px
+	margin 50px auto
+
+.footer
+	text-align center
+	margin-top 70px
+	&__icons
+		display flex
+		justify-content center
+		&__wrapper
+			display flex
+			align-items center
+			justify-content center
+			height 30px
+			width 30px
+			border 1px solid paleBlue
+			border-radius 50%
+			padding 7px
+			margin 20px 10px
+			& > img
+				width 100%
+				height auto
